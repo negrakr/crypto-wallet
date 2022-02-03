@@ -1,0 +1,63 @@
+.asset-card {
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 194px;
+  min-height: 244px;
+  padding: 25px 30px;
+
+  border-radius: 24px;
+  color: #000000;
+
+  &-btc {
+    background: #e5def0;
+  }
+
+  &-etc {
+    background: #d6edda;
+  }
+
+  &-eth {
+    background: #f6f0d8;
+  }
+
+  &__value {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  &__fiat {
+    font-size: 16px;
+  }
+
+  &__settings {
+    position: absolute;
+    top: 37px;
+    right: 24px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background: #ffffff;
+    border-radius: 14px;
+  }
+
+  &__income {
+    font-size: 15px;
+    color: #896ab9;
+  }
+}

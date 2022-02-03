@@ -1,0 +1,20 @@
+.dropdown-btn {
+  position: relative;
+  height: 44px;
+  line-height: 44px;
+  border: 1px solid #eff2f4;
+  border-radius: 22px;
+  padding-left: 18px;
+  padding-right: 18px + 20px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 7px;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+    background-image: url(./../img/arrow-down.svg);
+  }
+}

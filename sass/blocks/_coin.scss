@@ -1,0 +1,35 @@
+.coin {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    margin-right: 15px;
+    background-color: #222222;
+
+    img {
+      width: 80%;
+      height: 80%;
+    }
+  }
+
+  &__name {
+
+    &-title {
+      font-weight: 600;
+      font-size: 15px;
+      color: #000000;
+      margin-bottom: 3px;
+    }
+
+    &-descr {
+      font-size: 14px;
+      color: #7a899a;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.dashboard__header-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #f2f5fa !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: #dce3f0 !important;
+  }
+
+  &--hot {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      display: block;
+      width: 9px;
+      height: 9px;
+      background: #ff5f5e;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+    }
+  }
+}

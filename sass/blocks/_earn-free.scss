@@ -1,0 +1,78 @@
+.earn-free {
+  position: relative;
+  width: 410px;
+  height: 363px;
+  background: #222222;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 45px 40px 60px 30px;
+  background-image: url(./../img/earn-card/wallet-lines.svg);
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: right bottom;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 345px;
+    height: 24px;
+    background: #dfdfe3;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 295px;
+    height: 24px;
+    background: #f0f0f1;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+
+    bottom: -48px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 11px;
+
+    ::first-line {
+      font-weight: 700;
+    }
+
+    &-free {
+      display: inline-block;
+      background-image: url(./../img/earn-card/free.svg);
+      width: 98px;
+      height: 75px;
+      vertical-align: middle;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
+
+  &__button {
+    display: inline-block;
+    height: 46px;
+    background: #bcdfff;
+    border-radius: 23px;
+    padding-left: 36px;
+    padding-right: 36px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 46px;
+    color: #000000;
+  }
+}
